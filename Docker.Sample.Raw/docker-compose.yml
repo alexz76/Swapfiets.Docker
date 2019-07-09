@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  mywebgrocer.sonarqube:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        sonartoken: 123456789
+    environment: 
+      ASPNETCORE_ENVIRONMENT: "CI"

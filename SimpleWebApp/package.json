@@ -1,0 +1,13 @@
+{
+  "name": "docker_web_app1",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Alexandre Souza <alexandre.higtrollers@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

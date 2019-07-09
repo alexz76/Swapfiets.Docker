@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  mywebgrocer.sonarqube:
+    image: sonarqube
+    container_name: "mywebgrocer.sonarqube"
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+    build:
+      context: .
+      dockerfile: Sonar.Dockerfile
+      args:
+        sonartoken: 209602405666cadebce506b35aa56796755bb88b
+        projectkey: "mywebgrocer.ecm.product"
+  # mywebgrocer.app:
+  #   image: mywebgrocer.app
+  #   container_name: "mywebgrocer.app"
+  #   depends_on:
+  #     - "mywebgrocer.sonarqube"
+  #   build:
+  #     context: .
+  #     dockerfile: App.Dockerfile
+  #     args:
+  #       solution: Sonarqube.QualityGate.Sample.sln
+  #       sonartoken: 209602405666cadebce506b35aa56796755bb88b
+  #       projectkey: "mywebgrocer.ecm.product"

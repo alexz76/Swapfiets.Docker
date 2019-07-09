@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Sample.Api", "Docker.Sample.Api.csproj", "{4296DEFE-F305-4EE5-ACCF-0EE9E048B9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonarqube.QualityGate.Api.Tdd", "Sonarqube.QualityGate.Api.Tdd\Sonarqube.QualityGate.Api.Tdd.csproj", "{2D1102DA-5256-475A-9EE1-382E0230BFCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4296DEFE-F305-4EE5-ACCF-0EE9E048B9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4296DEFE-F305-4EE5-ACCF-0EE9E048B9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4296DEFE-F305-4EE5-ACCF-0EE9E048B9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4296DEFE-F305-4EE5-ACCF-0EE9E048B9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1102DA-5256-475A-9EE1-382E0230BFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1102DA-5256-475A-9EE1-382E0230BFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1102DA-5256-475A-9EE1-382E0230BFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1102DA-5256-475A-9EE1-382E0230BFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFCF72B8-3214-4718-959C-8CFA55C737FA}
+	EndGlobalSection
+EndGlobal

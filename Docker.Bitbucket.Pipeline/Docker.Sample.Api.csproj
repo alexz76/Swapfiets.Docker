@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Sonarqube.QualityGate.Api.Tdd\**" />
+      <Content Remove="Sonarqube.QualityGate.Api.Tdd\**" />
+      <EmbeddedResource Remove="Sonarqube.QualityGate.Api.Tdd\**" />
+      <None Remove="Sonarqube.QualityGate.Api.Tdd\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="docker-compose.override.yml" />
+      <None Remove="docker-compose.yml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
+    </ItemGroup>
+
+</Project>

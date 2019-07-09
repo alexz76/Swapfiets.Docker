@@ -1,0 +1,17 @@
+﻿image: microsoft/dotnet:sdk
+
+pipelines:
+  default:
+    - step:
+        name: "Sonar Scanner"
+        caches:
+          - dotnetcore
+        script:
+          - export PROJECT_NAME=Docker.Sample.Api.csproj
+          - export SONAR_ORGANIZATION=higtrollers-bitbucket
+          - dotnet tool install dotnet-sonarscanner --tool-path . --version 4.3.1
+          - dotnet restore
+          - dir
+          - dotnet-sonarscanner begin /key:"sonarqube.qualitygate.api" /d:sonar.organization=$SONAR_ORGANIZATION /d:sonar.host.url=$SONAR_URL /d:sonar.login=$SONAR_TOKEN
+          - dotnet build $PROJECT_NAME
+          - dotnet-sonarscanner end /d:sonar.login=$SONAR_TOKEN
