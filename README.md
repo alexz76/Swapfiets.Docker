@@ -1,6 +1,6 @@
 # Docker Training
 
-Welcome to Swapfiets Docker trainign!
+Welcome to Swapfiets Docker training!
 
 ## Sample Apps
 
